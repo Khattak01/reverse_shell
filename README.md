@@ -4,4 +4,4 @@ First you need to run the server to listen on that port, and then run the client
 
 
 Server: python server.py<br>
-Clicnt: python client.py 192.168.8.111(Host address)
+Clicnt: python client.py host_address i.e 192.168.8.111
